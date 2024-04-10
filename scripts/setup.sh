@@ -1,6 +1,6 @@
 #!/bin/bash
 
-python -m venv env
+python3 -m venv env
 source env/bin/activate
 
 pip install -U pip
@@ -29,5 +29,5 @@ POSTGRESQL_DATABASE_USER=$POSTGRESQL_DATABASE_USER
 POSTGRESQL_DATABASE_PASSWORD=$POSTGRESQL_DATABASE_PASSWORD
 EOF
 
-python manage.py compilemessages
-python manage.py migrate
+ manage.py compilemessages
+python3 manage.py migrate
